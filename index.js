@@ -1,10 +1,13 @@
 const express = require("express");
+var cors = require('cors')
 const bodyParser = require('body-parser');
 
 const PORT = process.env.PORT || 3002;
 const app = express();
 
+
 const model = require('./api/model.js');
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
