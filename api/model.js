@@ -14,7 +14,7 @@ mongoose.connect('mongodb+srv://root:daBallerSquad98$@dacluster0.x22ip.mongodb.n
 
 
 
-mongoose.set('useCreateIndex', true);
+
 //Schema for the users "table" in our mongodb
 let Schema = mongoose.Schema;
 let userSchema = new Schema({
